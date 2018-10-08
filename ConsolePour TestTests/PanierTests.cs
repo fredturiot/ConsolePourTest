@@ -29,6 +29,21 @@ namespace ConsolePour_TestTests
             });
             Assert.AreEqual(100, panier.GetTotal());
         }
+        [TestMethod]
+        public void CalculFraisPortOffertsSiSupperieur100()
+        {
+            var panier = new Panier();
+            panier.Lignes.Add(new LignePanier
+            {
+                Produit = new Produit()
+                {
+                    Name = "chainsow",
+                    Prix = 90m
+                },
+                Quantity = 2
+            });
+            Assert.AreEqual(180, panier.GetTotal());
+        }
 
 
     }

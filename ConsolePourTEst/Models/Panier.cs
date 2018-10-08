@@ -24,7 +24,15 @@ namespace ConsolePourTEst.Models
                 return 0; 
             }
             var totalLignes = Lignes.Sum(x => x.Produit.Prix * x.Quantity);
-            return totalLignes + FraisDePort;
+            return totalLignes > 100 ? totalLignes : totalLignes + FraisDePort; 
+            // frais de port offert a partir de 100€
+        }
+        public void Valider() // valide la ligne
+        {
+            foreach (var ligne in Lignes)
+            {
+                ligne.Valider();
+            }
         }
     }
 }

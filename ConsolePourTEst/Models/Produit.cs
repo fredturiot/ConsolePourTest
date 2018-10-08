@@ -23,7 +23,7 @@ namespace ConsolePourTEst.Models
         {
             if (Prix<=0)
                 throw new Exception("Prix ne peut pas etre negatif");
-            if (string.IsNullOrEmpty(Name))
+            if (string.IsNullOrWhiteSpace(Name))
                 throw new Exception("Nom est Requis");
         }
 
