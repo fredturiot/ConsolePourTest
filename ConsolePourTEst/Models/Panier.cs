@@ -23,7 +23,7 @@ namespace ConsolePourTEst.Models
             {
                 return 0; 
             }
-            var totalLignes = Lignes.Sum(x => x.Produit.Price * x.Quantity);
+            var totalLignes = Lignes.Sum(x => x.Produit.Prix * x.Quantity);
             return totalLignes + FraisDePort;
         }
     }
