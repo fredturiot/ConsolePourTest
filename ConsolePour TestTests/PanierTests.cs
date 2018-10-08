@@ -23,8 +23,7 @@ namespace ConsolePour_TestTests
                 Produit = new Produit()
                 {
                     Name = "chainsow",
-                    Price = 100m
-
+                    Price = 90m
                 },
                 Quantity=1
             });

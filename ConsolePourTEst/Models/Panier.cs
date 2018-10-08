@@ -11,10 +11,18 @@ namespace ConsolePourTEst.Models
     {
         //public static int ID { get; set; }   
         //pas d'id car pas d'enregistrement en base
+        public Panier()
+        {
+            Lignes = new List<LignePanier>();
+        }
         public decimal FraisDePort { get; set; } = 10m;
         public List<LignePanier> Lignes { get; set; }
         public Decimal GetTotal()
         {
+            if (!Lignes.Any())// si Lignes est vide
+            {
+                return 0; 
+            }
             var totalLignes = Lignes.Sum(x => x.Produit.Price * x.Quantity);
             return totalLignes + FraisDePort;
         }
