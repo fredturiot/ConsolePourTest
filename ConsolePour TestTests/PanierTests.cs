@@ -37,7 +37,7 @@ namespace ConsolePour_TestTests
             {
                 Produit = new Produit()
                 {
-                    Name = "chainsow",
+                    Name = "Chainsaw",
                     Prix = 90m
                 },
                 Quantity = 2
