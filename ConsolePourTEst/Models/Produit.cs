@@ -1,6 +1,6 @@
 ﻿namespace ConsolePourTEst.Models
 {
-    class Produit
+    public class Produit
     {
         public int ID { get; set; }
         public string Name { get; set; }

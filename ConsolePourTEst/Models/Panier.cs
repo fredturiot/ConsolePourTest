@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConsolePourTEst.Models
 {
 
-    class Panier
+    public class Panier
     {
         //public static int ID { get; set; }   
         //pas d'id car pas d'enregistrement en base
