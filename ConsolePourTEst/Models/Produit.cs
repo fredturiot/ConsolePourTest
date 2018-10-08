@@ -12,7 +12,7 @@ namespace ConsolePourTEst.Models
             set
             {
                 if (value <= 0)
-                    throw new System.Exception("Prix ne peut pas etre negatif");
+                    throw new Exception("Prix ne peut pas etre negatif");
                 prix = value;
             }
 
